@@ -13,6 +13,7 @@
         label = "default_kscan";
         diode-direction = "col2row";
         
+        
         row-gpios
             = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
               <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -28,3 +29,11 @@
               <&pro_micro 4 GPIO_ACTIVE_HIGH>;
              
     };
+    
+    default_transform: matrix_transform {
+        compatible = "zmk,matrix-transform";
+        columns = <12>;
+        rows = <4>;
+        col-offset = <6>;
+    };
+};
