@@ -59,10 +59,10 @@
 
         symbols {
             bindings = <
-        &trans  &kp EXCL    &kp AT   &kp HASH  &kp DOLLAR   &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-        &trans   &kp TAB  &kp PLUS  &kp MINUS   &kp SLASH  &kp QUESTION   &kp LEFT       &kp DOWN        &kp UP             &kp RIGHT              &kp GRAVE      &kp TILDE
-&kp LEFT_SHIFT    &trans    &trans     &trans      &trans        &trans  &kp EQUAL         &trans        &trans                &trans                 &trans         &trans
-                                       &trans      &trans        &trans     &trans         &trans        &trans
+        &trans  &kp EXCL    &kp AT   &kp HASH  &kp DOLLAR   &kp PERCENT  &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+        &trans   &kp TAB  &kp PLUS  &kp MINUS   &kp SLASH  &kp QUESTION   &kp LEFT       &kp DOWN         &kp UP             &kp RIGHT              &kp GRAVE      &kp TILDE
+&kp LEFT_SHIFT    &trans    &trans     &trans      &trans        &trans  &kp EQUAL         &trans  &kp LESS_THAN      &kp GREATER_THAN                 &trans         &trans
+                                       &trans      &trans        &trans     &trans         &trans         &trans
             >;
         };
     };
