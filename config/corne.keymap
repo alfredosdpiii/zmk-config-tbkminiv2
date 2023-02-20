@@ -160,6 +160,17 @@
         };
     };
 
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            label = "arrow_func";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp EQUAL &kp GT &kp SPACE &kp LEFT_BRACE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -171,9 +182,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &td_mq  &td_mw     &td_me     &td_mr  &td_mt  &td_my   &td_mu                &td_mi   &td_mo    &td_mp  &kp BSPC
-     &mo 3   &kp A   &kp S      &kp D      &kp F   &kp G   &kp H    &kp J                 &kp K    &kp L  &kp SEMI   &kp SQT
- &td_mshft   &kp Z   &kp X      &kp C      &kp V   &kp B   &kp N    &kp M             &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
+&kp ESCAPE  &td_mq  &td_mw     &td_me     &td_mr  &td_mt  &td_my   &td_mu                &td_mi      &td_mo      &td_mp    &kp BSPC
+     &mo 3   &kp A   &kp S      &kp D      &kp F   &kp G   &kp H    &kp J                 &kp K       &kp L    &td_mcol  &td_mquote
+ &td_mshft   &kp Z   &kp X      &kp C      &kp V   &kp B   &kp N    &kp M           &td_mglthan  &td_mgthan  &td_mslash    &kp PIPE
                             &kp LCTRL  &kp SPACE   &mo 1  &tog 2  &kp RET  &mt LMETA LC(LG(UP))
             >;
         };
