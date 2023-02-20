@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt LSHIFT CAPSLOCK>,
                 <&kp LCTRL>;
@@ -23,7 +23,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Q";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt N1 Q>,
                 <&kp EXCL>;
@@ -32,7 +32,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "W";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt N2 W>,
                 <&kp AT>;
@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "E";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt N3 E>,
                 <&kp HASH>;
@@ -50,7 +50,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "R";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt N4 R>,
                 <&kp DOLLAR>;
@@ -59,7 +59,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "T";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt N5 T>,
                 <&kp PERCENT>;
@@ -68,7 +68,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Y";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt N6 Y>,
                 <&kp CARET>;
@@ -77,7 +77,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "U";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt N7 U>,
                 <&kp AMPERSAND>;
@@ -86,7 +86,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "I";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt N8 I>,
                 <&kp ASTERISK>;
@@ -95,7 +95,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "O";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt N8 O>,
                 <&kp LEFT_PARENTHESIS>;
@@ -104,7 +104,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "P";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&mt N9 P>,
                 <&kp RIGHT_PARENTHESIS>;
@@ -113,7 +113,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "COL";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&kp SEMICOLON>,
                 <&kp COLON>;
@@ -122,7 +122,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "QUOTE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&kp SINGLE_QUOTE>,
                 <&kp DOUBLE_QUOTES>,
@@ -132,7 +132,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SLASH";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&kp SLASH>,
                 <&kp QUESTION>,
@@ -142,7 +142,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "GTHAN";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&kp DOT>,
                 <&kp GREATER_THAN>,
@@ -152,7 +152,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHAN";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings =
                 <&kp DOT>,
                 <&kp LESS_THAN>,
