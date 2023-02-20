@@ -173,6 +173,15 @@
                 <&kp TAB>,
                 <&tog 3>;
         };
+        td_mshifter: tap_dance_shifter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SUPERSHIFT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&sk LEFT_SHIFT>,
+                <&kt LEFT_SHIFT>;
+        };
     };
 
     macros {
