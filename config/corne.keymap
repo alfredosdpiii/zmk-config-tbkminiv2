@@ -19,9 +19,6 @@
     global-quick-tap;
     bindings = <&kp>, <&kp>;
 };
-&mt {
-    tapping-term-ms = <150>;
-};
     behaviors {
         td_mshft: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
