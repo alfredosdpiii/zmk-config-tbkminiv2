@@ -146,7 +146,7 @@
             bindings =
                 <&kp DOT>,
                 <&kp GREATER_THAN>,
-                <&kp EQUAL>;
+                <&arrow_func>;
         };
         td_mglthan: tap_dance_mlthan {
             compatible = "zmk,behavior-tap-dance";
