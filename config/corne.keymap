@@ -10,19 +10,82 @@
 
 / {
 behaviors {
-        td_mt: tap_dance_mod_tap {
+        td_mshft: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
         };
-        td_mq: tap_dance_mod_tap {
+        td_mq: tap_dance_q {
             compatible = "zmk,behavior-tap-dance";
             label = "Q";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt N1 Q>, <&kp EXCL>;
+        };
+        td_mw: tap_dance_w {
+            compatible = "zmk,behavior-tap-dance";
+            label = "W";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt N2 W>, <&kp AT>;
+        };
+        td_me: tap_dance_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "E";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt N3 E>, <&kp HASH>;
+        };
+        td_mr: tap_dance_r {
+            compatible = "zmk,behavior-tap-dance";
+            label = "R";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt N4 R>, <&kp DOLLAR>;
+        };
+        td_mt: tap_dance_t {
+            compatible = "zmk,behavior-tap-dance";
+            label = "T";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt N5 T>, <&kp PERCENT>;
+        };
+        td_my: tap_dance_y {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Y";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt N6 Y>, <&kp CARET>;
+        };
+        td_mu: tap_dance_u {
+            compatible = "zmk,behavior-tap-dance";
+            label = "U";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt N7 U>, <&kp AMPERSAND>;
+        };
+        td_mi: tap_dance_i {
+            compatible = "zmk,behavior-tap-dance";
+            label = "I";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt N8 I>, <&kp ASTERISK>;
+        };
+        td_mo: tap_dance_o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "O";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt N8 O>, <&kp LEFT_PARENTHESIS>;
+        };
+        td_mp: tap_dance_p {
+            compatible = "zmk,behavior-tap-dance";
+            label = "P";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt N9 P>, <&kp RIGHT_PARENTHESIS>;
         };
     };
     keymap {
@@ -36,9 +99,9 @@ behaviors {
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-         &kp ESCAPE  &td_mq  &kp W      &kp E      &kp R  &kp T   &kp Y    &kp U                 &kp I    &kp O     &kp P  &kp BSPC
+         &kp ESCAPE  &td_mq  &td_mw     &kp E      &kp R  &kp T   &kp Y    &kp U                 &kp I    &kp O     &kp P  &kp BSPC
               &mo 3  &kp A  &kp S      &kp D      &kp F  &kp G   &kp H    &kp J                 &kp K    &kp L  &kp SEMI   &kp SQT
-             &td_mt  &kp Z  &kp X      &kp C      &kp V  &kp B   &kp N    &kp M             &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
+             &td_mshft  &kp Z  &kp X      &kp C      &kp V  &kp B   &kp N    &kp M             &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
                                    &kp LCTRL  &kp SPACE  &mo 1  &tog 2  &kp RET  &mt LMETA LC(LG(UP))
             >;
         };
