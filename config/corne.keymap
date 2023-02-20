@@ -124,8 +124,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&kp SINGLE_QUOTE>,
-                <&kp DOUBLE_QUOTES>,
+                <&mt DOUBLE_QUOTE SINGLE_QUOTE>,
                 <&kp GRAVE>;
         };
         td_mslash: tap_dance_mslash {
@@ -134,8 +133,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&kp SLASH>,
-                <&kp QUESTION>,
+                <&mt QUESTION SLASH>,
                 <&kp BACKSLASH>;
         };
         td_mgthan: tap_dance_mgthan {
@@ -144,8 +142,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&kp DOT>,
-                <&kp GREATER_THAN>,
+                <&mt GREATER_THAN DOT>,
                 <&kp EQUAL>;
         };
         td_mglthan: tap_dance_mlthan {
@@ -154,8 +151,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&kp DOT>,
-                <&kp LESS_THAN>,
+                <&mt LESS_THAN DOT>,
                 <&kp EQUAL>;
         };
     };
