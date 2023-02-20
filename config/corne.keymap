@@ -8,8 +8,18 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define MO_TOG(layer) &mo_tog layer layer
+
 / {
     behaviors {
+      mo_tog: behavior_mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "mo_tog";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&tog>;
+        };
         td_mshft: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MOD_TAP";
@@ -208,7 +218,7 @@
       &kp ESCAPE  &kp Q  &kp W         &kp E      &kp R  &kp T   &kp Y    &kp U                 &kp I       &kp O       &kp P    &kp BSPC
     &td_mshifter  &kp A  &kp S         &kp D      &kp F  &kp G   &kp H    &kp J                 &kp K       &kp L    &td_mcol  &td_mquote
 &kp LEFT_CONTROL  &kp Z  &kp X         &kp C      &kp V  &kp B   &kp N    &kp M           &td_mglthan  &td_mgthan  &td_mslash  &td_mother
-                                &td_mlyrshft  &kp SPACE  &mo 1  &tog 2  &kp RET  &mt LMETA LC(LG(UP))
+                                &td_mlyrshft  &kp SPACE  &mo 1  &mo_tog 2 3  &kp RET  &mt LMETA LC(LG(UP))
             >;
         };
 
