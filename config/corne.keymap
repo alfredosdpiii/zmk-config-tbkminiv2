@@ -166,7 +166,7 @@
             label = "arrow_func";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp EQUAL &kp GT &kp SPACE &kp LEFT_BRACE>;
         };
     };
