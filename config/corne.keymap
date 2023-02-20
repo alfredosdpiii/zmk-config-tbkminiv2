@@ -151,8 +151,17 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt LESS_THAN DOT>,
+                <&mt LESS_THAN COMMA>,
                 <&kp EQUAL>;
+        };
+        td_mother: tap_dance_mother {
+            compatible = "zmk,behavior-tap-dance";
+            label = "OTHER";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings =
+                <&mt PIPE MINUS>,
+                <&kp UNDER>;
         };
     };
 
@@ -180,7 +189,7 @@
             bindings = <
 &kp ESCAPE  &td_mq  &td_mw     &td_me     &td_mr  &td_mt  &td_my   &td_mu                &td_mi      &td_mo      &td_mp    &kp BSPC
      &mo 3   &kp A   &kp S      &kp D      &kp F   &kp G   &kp H    &kp J                 &kp K       &kp L    &td_mcol  &td_mquote
- &td_mshft   &kp Z   &kp X      &kp C      &kp V   &kp B   &kp N    &kp M           &td_mglthan  &td_mgthan  &td_mslash    &kp PIPE
+ &td_mshft   &kp Z   &kp X      &kp C      &kp V   &kp B   &kp N    &kp M           &td_mglthan  &td_mgthan  &td_mslash    &td_mother
                             &kp LCTRL  &kp SPACE   &mo 1  &tog 2  &kp RET  &mt LMETA LC(LG(UP))
             >;
         };
