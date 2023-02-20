@@ -25,7 +25,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt N1 Q>,
+                <&kp N1>,
                 <&kp EXCL>;
         };
         td_mw: tap_dance_w {
@@ -34,7 +34,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt N2 W>,
+                <&kp N2>,
                 <&kp AT>;
         };
         td_me: tap_dance_e {
@@ -43,7 +43,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt N3 E>,
+                <&kp N3>,
                 <&kp HASH>;
         };
         td_mr: tap_dance_r {
@@ -52,7 +52,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt N4 R>,
+                <&kp N4>,
                 <&kp DOLLAR>;
         };
         td_mt: tap_dance_t {
@@ -61,7 +61,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt N5 T>,
+                <&kp N5>,
                 <&kp PERCENT>;
         };
         td_my: tap_dance_y {
@@ -70,7 +70,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt N6 Y>,
+                <&kp N6>,
                 <&kp CARET>;
         };
         td_mu: tap_dance_u {
@@ -79,7 +79,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt N7 U>,
+                <&kp N7>,
                 <&kp AMPERSAND>;
         };
         td_mi: tap_dance_i {
@@ -88,7 +88,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt N8 I>,
+                <&kp N8>,
                 <&kp ASTERISK>;
         };
         td_mo: tap_dance_o {
@@ -97,7 +97,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt N8 O>,
+                <&kp N9>,
                 <&kp LEFT_PARENTHESIS>;
         };
         td_mp: tap_dance_p {
@@ -106,7 +106,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt N9 P>,
+                <&kp N0>,
                 <&kp RIGHT_PARENTHESIS>;
         };
         td_mcol: tap_dance_mcol {
