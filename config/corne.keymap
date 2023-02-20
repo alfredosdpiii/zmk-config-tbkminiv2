@@ -124,7 +124,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings =
-                <&mt DOUBLE_QUOTE SINGLE_QUOTE>,
+                <&mt DOUBLE_QUOTES APOSTROPHE>,
                 <&kp GRAVE>;
         };
         td_mslash: tap_dance_mslash {
