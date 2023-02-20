@@ -196,10 +196,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W      &kp E      &kp R  &kp T   &kp Y    &kp U                 &kp I       &kp O       &kp P    &kp BSPC
- &lt 3 TAB  &kp A  &kp S      &kp D      &kp F  &kp G   &kp H    &kp J                 &kp K       &kp L    &td_mcol  &td_mquote
- &td_mshft  &kp Z  &kp X      &kp C      &kp V  &kp B   &kp N    &kp M           &td_mglthan  &td_mgthan  &td_mslash  &td_mother
-                          &kp LCTRL  &kp SPACE  &mo 1  &tog 2  &kp RET  &mt LMETA LC(LG(UP))
+  &kp ESCAPE  &kp Q  &kp W      &kp E      &kp R  &kp T   &kp Y    &kp U                 &kp I       &kp O       &kp P    &kp BSPC
+&td_mlyrshft  &kp A  &kp S      &kp D      &kp F  &kp G   &kp H    &kp J                 &kp K       &kp L    &td_mcol  &td_mquote
+   &td_mshft  &kp Z  &kp X      &kp C      &kp V  &kp B   &kp N    &kp M           &td_mglthan  &td_mgthan  &td_mslash  &td_mother
+                            &kp LCTRL  &kp SPACE  &mo 1  &tog 2  &kp RET  &mt LMETA LC(LG(UP))
             >;
         };
 
@@ -235,10 +235,10 @@
 
         symbols {
             bindings = <
-        &trans  &kp EXCL    &kp AT   &kp HASH  &kp DOLLAR   &kp PERCENT  &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-        &trans   &kp TAB  &kp PLUS  &kp MINUS   &kp SLASH  &kp QUESTION   &kp LEFT       &kp DOWN         &kp UP             &kp RIGHT              &kp GRAVE      &kp TILDE
-&kp LEFT_SHIFT    &trans    &trans     &trans      &trans        &trans  &kp EQUAL    &arrow_func  &kp LESS_THAN      &kp GREATER_THAN                 &trans         &trans
-                                       &trans      &trans        &trans     &trans         &trans         &trans
+&kp TILDE     &td_mq    &td_mw     &td_me            &td_mr          &td_mt     &td_my       &td_mu       &td_mi      &td_mo      &td_mp  &kp BACKSPACE
+   &trans  &kp SLASH  &kp PLUS  &kp MINUS  &kp LEFT_BRACKET  &kp LEFT_BRACE   &kp LEFT     &kp DOWN       &kp UP   &kp RIGHT    &td_mcol     &td_mquote
+   &trans     &trans    &trans   &kp PIPE         &kp GRAVE       &kp UNDER  &kp EQUAL  &arrow_func  &td_mglthan  &td_mgthan  &td_mslash     &td_mother
+                                   &trans            &trans          &trans     &trans       &trans       &trans
             >;
         };
     };
