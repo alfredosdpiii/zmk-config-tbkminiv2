@@ -109,6 +109,55 @@
                 <&mt N9 P>,
                 <&kp RIGHT_PARENTHESIS>;
         };
+        td_mcol: tap_dance_mcol {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COL";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp SEMICOLON>,
+                <&kp COLON>;
+        };
+        td_mquote: tap_dance_mquote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QUOTE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp SINGLE_QUOTE>,
+                <&kp DOUBLE_QUOTES>,
+                <&kp GRAVE>;
+        };
+        td_mslash: tap_dance_mslash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SLASH";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp SLASH>,
+                <&kp QUESTION>,
+                <&kp BACKSLASH>;
+        };
+        td_mgthan: tap_dance_mgthan {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GTHAN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp DOT>,
+                <&kp GREATER_THAN>,
+                <&kp EQUAL>;
+        };
+        td_mglthan: tap_dance_mlthan {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LTHAN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp DOT>,
+                <&kp LESS_THAN>,
+                <&kp EQUAL>;
+        };
     };
 
     keymap {
