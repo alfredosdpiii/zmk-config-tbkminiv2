@@ -163,6 +163,15 @@
                 <&mt PIPE MINUS>,
                 <&kp UNDERSCORE>;
         };
+        td_layershifter: tap_dance_layershifter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LYRSHFT";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings =
+                <&kp TAB>,
+                <&tog 3>;
+        };
     };
 
     macros {
