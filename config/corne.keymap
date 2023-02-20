@@ -21,7 +21,7 @@ behaviors {
             compatible = "zmk,behavior-tap-dance";
             label = "Q";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&mt N1 Q>, <&kp EXCL>;
         };
     };
