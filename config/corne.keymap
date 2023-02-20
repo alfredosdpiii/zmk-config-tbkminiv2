@@ -163,7 +163,7 @@
                 <&mt PIPE MINUS>,
                 <&kp UNDERSCORE>;
         };
-        td_layershifter: tap_dance_layershifter {
+        td_mlyrshft: tap_dance_lyrshft {
             compatible = "zmk,behavior-tap-dance";
             label = "LYRSHFT";
             #binding-cells = <0>;
