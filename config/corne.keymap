@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
 / {
@@ -207,7 +206,7 @@
 
             bindings = <
       &kp ESCAPE  &kp Q  &kp W         &kp E      &kp R  &kp T   &kp Y    &kp U                 &kp I       &kp O       &kp P    &kp BSPC
-  &kt LEFT_SHIFT  &kp A  &kp S         &kp D      &kp F  &kp G   &kp H    &kp J                 &kp K       &kp L    &td_mcol  &td_mquote
+    &td_mshifter  &kp A  &kp S         &kp D      &kp F  &kp G   &kp H    &kp J                 &kp K       &kp L    &td_mcol  &td_mquote
 &kp LEFT_CONTROL  &kp Z  &kp X         &kp C      &kp V  &kp B   &kp N    &kp M           &td_mglthan  &td_mgthan  &td_mslash  &td_mother
                                 &td_mlyrshft  &kp SPACE  &mo 1  &tog 2  &kp RET  &mt LMETA LC(LG(UP))
             >;
