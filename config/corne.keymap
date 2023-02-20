@@ -161,7 +161,7 @@
     };
 
     macros {
-        new_macro: new_macro {
+        arrow_func: arrow_func {
             compatible = "zmk,behavior-macro";
             label = "arrow_func";
             #binding-cells = <0>;
