@@ -161,7 +161,7 @@
             tapping-term-ms = <150>;
             bindings =
                 <&mt PIPE MINUS>,
-                <&kp UNDER>;
+                <&kp UNDERSCORE>;
         };
     };
 
