@@ -17,6 +17,13 @@ behaviors {
             tapping-term-ms = <200>;
             bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
         };
+        td_mq: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Q";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&mt N1 Q>, <&kp EXCL>;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -29,7 +36,7 @@ behaviors {
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-         &kp ESCAPE  &kp Q  &kp W      &kp E      &kp R  &kp T   &kp Y    &kp U                 &kp I    &kp O     &kp P  &kp BSPC
+         &kp ESCAPE  &td_mq  &kp W      &kp E      &kp R  &kp T   &kp Y    &kp U                 &kp I    &kp O     &kp P  &kp BSPC
               &mo 3  &kp A  &kp S      &kp D      &kp F  &kp G   &kp H    &kp J                 &kp K    &kp L  &kp SEMI   &kp SQT
              &td_mt  &kp Z  &kp X      &kp C      &kp V  &kp B   &kp N    &kp M             &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
                                    &kp LCTRL  &kp SPACE  &mo 1  &tog 2  &kp RET  &mt LMETA LC(LG(UP))
