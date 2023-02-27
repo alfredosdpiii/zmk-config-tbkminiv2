@@ -274,10 +274,10 @@
 
         symbols {
             bindings = <
-&kp TILDE     &td_mq    &td_mw     &td_me            &td_mr          &td_mt     &td_my       &td_mu       &td_mi      &td_mo      &td_mp  &kp BACKSPACE
-   &trans  &kp SLASH  &kp PLUS  &kp MINUS  &kp LEFT_BRACKET  &kp LEFT_BRACE   &kp LEFT     &kp DOWN       &kp UP   &kp RIGHT    &td_mcol     &td_mquote
-   &trans     &trans    &trans   &kp PIPE         &kp GRAVE       &kp UNDER  &kp EQUAL  &arrow_func  &td_mglthan  &td_mgthan  &td_mslash     &td_mother
-                                   &trans            &trans          &trans     &trans       &trans       &trans
+&kp TILDE     &td_mq    &td_mw     &td_me        &td_mr      &td_mt     &td_my       &td_mu       &td_mi      &td_mo      &td_mp  &kp BACKSPACE
+   &trans  &kp SLASH  &kp PLUS  &kp MINUS  &td_mbracket  &td_mbrace   &kp LEFT     &kp DOWN       &kp UP   &kp RIGHT    &td_mcol     &td_mquote
+   &trans     &trans    &trans   &kp PIPE     &kp GRAVE   &kp UNDER  &kp EQUAL  &arrow_func  &td_mglthan  &td_mgthan  &td_mslash     &td_mother
+                                   &trans        &trans      &trans     &trans       &trans       &trans
             >;
         };
     };
