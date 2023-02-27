@@ -193,6 +193,24 @@
                 <&sk LEFT_SHIFT>,
                 <&kt LEFT_SHIFT>;
         };
+        td_mbrace: tap_dance_mbrace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BRACES";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp LEFT_BRACE>,
+                <&kp RIGHT_BRACE>;
+        };
+        td_mbracket: tap_dance_mbracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BRACKETS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp LEFT_BRACKET>,
+                <&kp RIGHT_BRACKET>;
+        };
     };
 
     macros {
