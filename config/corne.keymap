@@ -224,6 +224,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        new_combo {
+            bindings = <&mo 1>;
+            key-positions = <38 37>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -238,7 +247,7 @@
       &kp ESCAPE  &kp Q  &kp W         &kp E      &kp R  &kp T        &kp Y    &kp U                 &kp I       &kp O       &kp P    &kp BSPC
     &td_mshifter  &kp A  &kp S         &kp D      &kp F  &kp G        &kp H    &kp J                 &kp K       &kp L    &td_mcol  &td_mquote
 &kp LEFT_CONTROL  &kp Z  &kp X         &kp C      &kp V  &kp B        &kp N    &kp M           &td_mglthan  &td_mgthan  &td_mslash  &td_mother
-                                &td_mlyrshft  &kp SPACE  &mo 1  &mo_tog 2 3  &kp RET  &mt LMETA LC(LG(UP))
+                                &td_mlyrshft  &kp SPACE  &mo 4  &mo_tog 2 3  &kp RET  &mt LMETA LC(LG(UP))
             >;
         };
 
@@ -278,6 +287,15 @@
    &trans  &kp SLASH  &kp PLUS  &kp MINUS  &td_mbracket  &td_mbrace   &kp LEFT     &kp DOWN       &kp UP   &kp RIGHT    &td_mcol     &td_mquote
    &trans     &trans    &trans   &kp PIPE     &kp GRAVE   &kp UNDER  &kp EQUAL  &arrow_func  &td_mglthan  &td_mgthan  &td_mslash     &td_mother
                                    &trans        &trans      &trans     &trans       &trans       &trans
+            >;
+        };
+
+        Layer__4 {
+            bindings = <
+ &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp N8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp TAB        &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans        &trans        &trans  &trans
+ &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans        &trans        &trans  &trans
+                                           &trans        &trans        &trans        &trans        &trans  &trans
             >;
         };
     };
